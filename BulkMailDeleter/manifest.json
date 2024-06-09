@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Bulk Deleter",
+  "description": "Delete all emails from a specific sender.",
+  "version": "1.0",
+  "permissions": [
+    "identity",
+    "identity.email",
+    "storage",
+    "https://www.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "oauth2": {
+    "client_id": "1008946877844-p1fniailolqe3qvs7hmiln68s6d4p6kc.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/gmail.modify"]
+  }
+}
